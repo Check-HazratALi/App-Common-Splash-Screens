@@ -1,4 +1,4 @@
-# app_common_widgets
+# app_common_splash_screens
 
 A new Flutter project.
 

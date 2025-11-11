@@ -1,5 +1,5 @@
 
-import 'package:app_common_widgets/screens/splash_screens/animated_splash_5/elements_animated.dart';
+import 'package:app_common_splash_screens/screens/splash_screens/animated_splash_5/elements_animated.dart';
 import 'package:flutter/material.dart';
 
 void main() {

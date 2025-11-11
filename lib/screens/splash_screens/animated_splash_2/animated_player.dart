@@ -1,4 +1,4 @@
-import 'package:app_common_widgets/screens/splash_screens/animated_splash_1/transfelry.dart';
+import 'package:app_common_splash_screens/screens/splash_screens/animated_splash_1/transfelry.dart';
 import 'package:flutter/material.dart';
 import 'dart:math' as math;
 
