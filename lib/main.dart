@@ -1,6 +1,5 @@
-import 'dart:ui';
 
-import 'package:app_common_widgets/screens/splash_screens/animated_splash_4/middle_elements.dart';
+import 'package:app_common_widgets/screens/splash_screens/animated_splash_5/elements_animated.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -13,7 +12,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: const SplashContent(),
+      home: const FlexySplashScreen(),
       debugShowCheckedModeBanner: false,
     );
   }
