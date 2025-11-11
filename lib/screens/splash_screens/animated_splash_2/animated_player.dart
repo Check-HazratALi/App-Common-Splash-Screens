@@ -20,26 +20,25 @@ class _SplashScreeState extends State<SplashScree>
   ); // A darker green for depth
 
   @override
-void initState() {
-  super.initState();
+  void initState() {
+    super.initState();
 
-  _controller = AnimationController(
-    duration: const Duration(seconds: 5),
-    vsync: this,
-  );
+    _controller = AnimationController(
+      duration: const Duration(seconds: 5),
+      vsync: this,
+    );
 
-  _controller.forward();
+    _controller.forward();
 
-  _controller.addStatusListener((status) {
-    if (status == AnimationStatus.completed) {
-      // Navigate to the next screen here
-      Navigator.of(context).pushReplacement(
-        MaterialPageRoute(builder: (context) => const SplashScreen()),
-      );
-    }
-  });
-}
-
+    _controller.addStatusListener((status) {
+      if (status == AnimationStatus.completed) {
+        // Navigate to the next screen here
+        Navigator.of(context).pushReplacement(
+          MaterialPageRoute(builder: (context) => const SplashScreen()),
+        );
+      }
+    });
+  }
 
   @override
   void dispose() {
@@ -179,19 +178,18 @@ void initState() {
 
                 // Placeholder for loading bar / pulsing dots
                 SizedBox(
-  width: 150,
-  child: AnimatedBuilder(
-    animation: _controller,
-    builder: (context, child) {
-      return LinearProgressIndicator(
-        color: Colors.white,
-        backgroundColor: Colors.white.withOpacity(0.3),
-        value: _controller.value,
-      );
-    },
-  ),
-),
-
+                  width: 150,
+                  child: AnimatedBuilder(
+                    animation: _controller,
+                    builder: (context, child) {
+                      return LinearProgressIndicator(
+                        color: Colors.white,
+                        backgroundColor: Colors.white.withOpacity(0.3),
+                        value: _controller.value,
+                      );
+                    },
+                  ),
+                ),
 
                 const Spacer(flex: 4),
               ],
